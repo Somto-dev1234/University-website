@@ -383,7 +383,7 @@ footer .copyright .pro-links i:hover {
     padding: 15px 20px;
   }
   nav img {
-    width: 130px;
+    width: 120px;
   }
   #menu-btn {
       display: initial;
@@ -414,6 +414,13 @@ nav .navigation ul.active{
     right: 0;
 
 }
+#course .course-box {
+    grid-template-columns: 1fr; 
+  }
+
+  #features .fea-base {
+    grid-template-columns: 1fr; 
+  }
 
 nav .navigation ul li {
     padding: 20px 0 20px 40px;
@@ -426,8 +433,24 @@ nav .navigation ul li a{
 #home {
   padding-top:0px;
 }
+#home h2 {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  padding: 0 10px;
+
+}
 #home p {
-  width: 90%;
+  width: 100%;
+  font-size: 0.85rem;
+  line-height: 22px;
+  padding: 0 15px;
+}
+
+#home a {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 12px 25px;
+  font-size: 0.85rem;
 }
 
 #features {
@@ -452,12 +475,16 @@ nav .navigation ul li a{
 #experts {
   padding: 8vw 8vw 4vw 8vw;
 }
+footer {
+  flex-direction: column;
+  text-align: center;
+}
 
 .footer .copyright .pro-links {
   margin-top: 15px;
 }
 
-@media (max-width:475px) {
+ @media (max-width:475px) {
     #registration {
       display: flex;
       flex-direction: column;
@@ -474,6 +501,36 @@ nav .navigation ul li a{
         margin-top: 20px;
         margin-bottom: 20px;
       }
+      #experts {
+        display:grid;
+        justify-content: center;
+        align-items: center;
+      }
+} 
+@media (max-width: 1024px) {
+  nav {
+    padding: 15px 30px;
+  }
+
+  #home h2 {
+    font-size: 1.8rem;
+  }
+
+  #home p {
+    width: 70%;
+    font-size: 0.85rem;
+  }
+
+  #features, #course, #experts {
+    padding: 6vw 6vw;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
+
 
 }
